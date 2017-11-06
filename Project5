@@ -1,0 +1,29 @@
+#!/bin/bash
+# Bash Menu Script Example
+
+PS3='Please enter your choice: '
+options=("Games" "Shows" "Computer Settings" "User Settings" " "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "Games")
+            echo "This is where you will pick a game to play"
+            ;;
+        "Shows")
+            echo "Diffrent shows to watch"
+            ;;
+        "Computer Settings")
+            echo "Update personal computer settings"
+            ;;
+		 "User Settings")
+            echo "Change username,password, or security questions"
+            ;;
+		 "Email")
+            echo "Send email to coworker"
+            ;;
+        "Quit")
+            break
+            ;;
+        *) echo invalid option;;
+    esac
+done
