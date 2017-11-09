@@ -15,10 +15,10 @@ do
         "Computer Settings")
             echo "Update personal computer settings"
             ;;
-		 "User Settings")
+	"User Settings")
             echo "Change username,password, or security questions"
             ;;
-		 "Email")
+	"Email")
             echo "Send email to coworker"
             ;;
         "Quit")
